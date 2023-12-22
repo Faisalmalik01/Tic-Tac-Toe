@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+
+  text-align: center;
+}
+
+h1 {
+  padding: 6px;
+  color:rgb(255, 102, 0);
+  font-weight: 900;
+  font-size: 4rem;
+
+}
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+ 
+}
+
+.main {
+
+  height: 470px;
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+ /* background: linear-gradient(to right, red, yellow); */
+  box-shadow: 2px 2px 20px 2px orangered;
+}
+
+.btn {
+  border-radius: 5px;
+  height: 130px;
+  width: 130px;
+  border: none;
+  font-size: 70px;
+  font-weight: 700;
+  border-radius: 2px;
+  background-color: #666;
+  color: #fff;
+  font-family: cursive;
+
+ 
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 10px 1px #111;
+}
+
+#reset {
+  margin-top: 30px;
+  padding: 15px 40px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: gainsboro;
+  color: #222;
+  border: none;
+  border-radius: 20px 10px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+#new {
+  margin-top: 30px;
+  padding: 15px 20px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color:gainsboro;
+  color: #111;
+  border: none;
+  border-radius: 20px 10px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+h2 {
+  margin: 10px;
+  font-size: 3rem;
+  font-family: cursive;
+  color:rgb(252, 92, 92);
+ 
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+ .main {
+  height: 380px;
+  width: 360px;
+  margin-bottom: 50px;
+ }
+
+ .btn{
+  height: 100px;
+  width: 100px;
+ }
+ h2 {
+  font-size: 2rem;
+ }
+}
+
+@media  (max-width: 400px) {
+
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+ .main {
+  margin-bottom: 50px;
+  height: 300px;
+  width: 280px;
+ }
+
+ .btn{
+  height: 70px;
+  width: 70px;
+  font-size: 40px;
+
+ }
+ #reset {
+  margin-right: 15px;
+ }
+ #new {
+  margin-left: 15px;
+ }
+ h2 {
+  font-size: 1.5rem;
+ 
+}
+
+}
